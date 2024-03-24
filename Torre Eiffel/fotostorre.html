@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotos Torre</title>
+    <style>
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #e9b77f;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;
+            /*centraliza o menu*/
+            gap: 20px;
+        }
+
+        .imagem_torre {
+            grid-column-start: 1;
+            grid-column-end: 3;
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color:#e9b77f;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+
+        }
+        .card {
+            display: flex;
+            flex-flow: row wrap;
+
+        }
+
+        ul {
+            list-style-type: none;
+            color: #e9b77f;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #e9b77f 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #e9b77f;
+            color: white;
+        }
+
+        .img {
+            border: 1px solid #ccc;
+            border-radius: 1rem;
+            padding: 0.8rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .img img {
+            width: 125px;
+            height: 115px;
+        }
+
+        @media all and (min-width: 35rem) {
+            body {
+                margin: 0 auto;
+            }
+
+            /*.container {
+                max-width: 1200px;
+                margin: 0 auto;
+
+            }*/
+
+            .img {
+                max-width: 28rem;
+                margin: 1rem;
+            }
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .imagem_torre {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Torre Eiffel - La dame de Fer</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="torreeiffel.html">A Torre</a></li>
+            <li><a href="fotostorre.html">Fotos</a></li>
+            <li><a href="curiosidadestorre.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_torre">
+            <img src="img/torreeiffel.jpg">
+            <div class="infos">
+                <p><strong>A Torre Eiffel</strong></p>
+                <p>
+                    <strong>Período de Construção</strong>
+                    1887-1889
+                </p>
+                <p><strong>Data de Abertura</strong> 31/03/1889 (135 anos)</p>
+            </div>
+
+        </aside>
+        <section class=" principal">
+            <h1>
+                Fotos
+            </h1>
+            <div class="card">
+                <div class="img">
+                    <img src="img/fototorre1889.jpg">
+
+                    <div class="">
+                        <h2>Torre Eiffel</h2>
+                        <p>A Torre em 1889</p>
+
+                    </div>
+                </div>
+
+                <div class="img">
+                    <img src="img/dimensoestorre.png">
+
+                    <div class="">
+                        <h2>Projeto</h2>
+                        <p>Dimensões da Torre</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="img/torredebaixo.jpg">
+
+                    <div class="">
+                        <h2>Vista por baixo</h2>
+                        <p>A Torre vista por baixo</p>
+                    </div>
+                </div>
+                <div class="img">
+                    <img src="img/torreanoite.jpeg">
+
+                    <div class="">
+                        <h2>Torre Iluminada </h2>
+                        <p>Torre Eiffel iluminada à noite</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="container">
+        <h1> Desenvolvido por Wanessa Buoro</h1>
+    </footer>
+    </footer>
+    </div>
+</body>
+
+</html>

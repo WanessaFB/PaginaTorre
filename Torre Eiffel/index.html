@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torre Eiffel</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        .container {
+            display: grid;
+        }
+
+        header {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #e9b77f;
+        }
+
+        .menu {
+            grid-column-start: 6;
+            grid-column-end: 12;
+            justify-content: center;/*centraliza o menu*/
+            gap: 20px;/*https://nekocalc.com/px-to-rem-converter*/
+        }
+
+
+        .imagem_torre {
+            grid-column-start: 1;
+            grid-column-end: 3;
+
+        }
+
+        .principal {
+            grid-column-start: 4;
+            grid-column-end: 12;
+            padding-left: 15px;
+            padding-right: 15px;
+            text-align: justify;
+
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 12;
+            background-color: #e9b77f;
+            color: white;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        ul {
+            list-style-type: none;
+            color: #e9b77f;
+        }
+
+        a,
+        a:link {
+            text-decoration: none;
+            padding: 8px 16px;
+            border: solid #e9b77f 1px;
+        }
+
+        li {
+            float: left;
+        }
+
+        a:hover {
+            background-color: #e9b77f;
+            color: white;
+        }
+
+        /* media query para dispositivos móveis */
+        @media only screen and (max-width: 767px) {
+            .wrapper {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .imagem_torre {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+
+            .principal {
+                grid-column-start: 1;
+                grid-column-end: 1;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="container">
+        <h1 style="color: white; text-align: center;">Torre Eiffel - La dame de Fer</h1>
+        <br>
+
+    </header>
+    <nav class="container menu">
+        <ul>
+            <li><a href="torreeiffel.html">A Torre</a></li>
+            <li><a href="fotostorre.html">Fotos</a></li>
+            <li><a href="curiosidadestorre.html">Curiosidades</a></li>
+        </ul>
+    </nav>
+    <div class="container wrapper">
+        <aside class="imagem_torre">
+            <img src="img/torreeiffel.jpg">
+            <div class="infos">
+                <p><strong>A Torre Eiffel</strong></p>
+                <p>
+                    <strong>Período de Construção</strong>
+                    1887-1889
+                </p>
+                <p><strong>Data de Abertura</strong> 31/03/1889 (135 anos)</p>
+            </div>
+
+        </aside>
+        <section class="principal">
+            <h1>
+                Torre Eiffel
+            </h1>
+            <p>Torre Eiffel é uma torre de treliça de ferro forjado no Champ de Mars, em Paris, França.<br> Tem o nome do engenheiro Gustave Eiffel, cuja empresa projetou e construiu a torre.
+
+                Localmente apelidada de "Dama de Ferro" (em francês: La dame de fer), foi construída de 1887 a 1889 como a peça central da Exposição Universal de 1889 e foi inicialmente criticada por alguns dos principais artistas e intelectuais franceses por seu design, mas tornou-se um ícone cultural global da França e uma das estruturas mais reconhecidas do mundo. <p>A Torre Eiffel é o monumento pago mais visitado do mundo; 6,91 milhões de pessoas subiram na torre em 2015.<br> Foi designado um monumento histórico em 1964 e foi nomeado parte do Patrimônio Mundial pela UNESCO ("Paris, Margens do Sena") em 1991.<p>
+                
+                A torre tem 330 metros de altura, aproximadamente a mesma altura de um edifício de 81 andares, e é a estrutura mais alta de Paris. Sua base é quadrada, medindo 125 metros de cada lado. Durante sua construção, a Torre Eiffel ultrapassou o Monumento de Washington para se tornar a estrutura mais alta do mundo feita pelo homem, título que manteve por 41 anos até que o Edifício Chrysler em Nova York foi concluído em 1930.<p>Foi a primeira estrutura do mundo mundo a ultrapassar a marca dos 200 e 300 metros de altura. Devido à adição de uma antena de transmissão no topo da torre em 1957, agora ela é 5,2 metros mais alta que o Edifício Chrysler. <br>Excluindo os transmissores, a Torre Eiffel é a segunda estrutura autônoma mais alta da França depois do Viaduto de Millau.
+                
+                A torre tem três andares para visitantes, com restaurantes no primeiro e segundo níveis. A plataforma superior do andar superior fica a 276 m acima do solo — o deck de observação mais alto acessível ao público na União Europeia. Os ingressos podem ser adquiridos para subir por escadas ou elevador para o primeiro e segundo andares. A subida do nível do solo para o primeiro andar é de mais de 300 degraus, assim como a subida do primeiro nível para o segundo, fazendo toda a subida ser composta por 600 degraus.<br> Embora haja uma escada para o primeiro andar, geralmente ele é acessível apenas por elevador. <br>Fonte: Wikipédia</p>
+        </section>
+    </div>
+    <footer class="container">
+        <h1>Desenvolvido por Wanessa Buoro</h1>
+    </footer>
+    </div>
+</body>
+
+</html>
